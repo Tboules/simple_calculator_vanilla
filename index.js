@@ -22,6 +22,7 @@ class Calculator {
   }
 
   chooseOperation(operation) {
+    if (this.curTemp === "") return;
     if (this.curOp !== undefined) {
       this.compute();
       this.curTotal += " " + operation;
